@@ -85,7 +85,7 @@ namespace ECommerce.web
                     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                     {
                         ValidateIssuer = true,
-                        ValidIssuer = builder.Configuration.GetSection("JWTOptions")["Issuer"],
+                        ValidIssuer = builder.Configuration.GetSection("SecurityKey")["Issuer"],
                         ValidateAudience = true,
                         ValidAudience = builder.Configuration.GetSection("JWTOptions")["Audience"],
                         ValidateLifetime = true,
