@@ -18,7 +18,7 @@ namespace ECommerce.Service.MappingProfiles
                 return string.Empty;
             else
             {
-                var url = $"{configuration.GetSection("Urls")["BaseUrl"]}{source.product.PictureUrl}";
+                var url = $"{configuration.GetSection("Urls")["baseurl"]}{source.product.PictureUrl}";
                 return url;
             }
         }

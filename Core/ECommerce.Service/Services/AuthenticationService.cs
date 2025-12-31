@@ -128,13 +128,13 @@ namespace ECommerce.Service.Services
             {
                 userClaims.Add(new(ClaimTypes.Role, Role));
             }
-            var SecurityKey = configuration.GetSection("JWTOptions")["SecurityKey"];
+            var SecurityKey = configuration.GetSection("Jwt")["SecurityKey"];
             var Key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecurityKey));
             var creds = new SigningCredentials(Key, SecurityAlgorithms.HmacSha256);
             var Token = new JwtSecurityToken
                 (
-                    issuer: configuration.GetSection("JWTOptions")["Issuer"],
-                    audience: configuration.GetSection("JWTOptions")["Audience"],
+                    issuer: configuration.GetSection("Jwt")["Issuer"],
+                    audience: configuration.GetSection("Jwt")["Audience"],
                     claims: userClaims,
                     expires: DateTime.Now.AddDays(5),
                     signingCredentials: creds

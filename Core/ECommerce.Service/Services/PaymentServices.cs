@@ -23,7 +23,7 @@ namespace ECommerce.Service.Services
         public async Task<BasketDto> CreateOrUpdatePaymentIntentAsync(string BasketId)
         {
             //Confug Stripe with SecretKey : Install Stripe.net
-            StripeConfiguration.ApiKey = configuration["StripeSettings:SecretKey"];
+            StripeConfiguration.ApiKey = configuration["PaymentKey:PLACEHOLDER_KEY"];
             //GetBasket By BasketId 
             var Basket =await basketRepository.GetBasketAsync(BasketId)?? throw new BasketNotFound(BasketId);
             //Get Amount - GetProduct + DliveryMetod cost
