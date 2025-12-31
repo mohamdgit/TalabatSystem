@@ -1,0 +1,903 @@
+{
+	"info": {
+		"_postman_id": "3b2cb4b1-f3a3-4c15-9aac-bfcfad3380a8",
+		"name": "ECommerceAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49026259",
+		"_collection_link": "https://qabbaniii-3224798.postman.co/workspace/330eedfc-e739-4b79-8d3d-af4e6c3e95d6/collection/49026259-3b2cb4b1-f3a3-4c15-9aac-bfcfad3380a8?action=share&source=collection_link&creator=49026259"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NDAyNzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.QMgHjgfn50TLj3stYm_EDucIrKJDTrcD3oQzTvb-XLM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Brands",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NDAyNzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.QMgHjgfn50TLj3stYm_EDucIrKJDTrcD3oQzTvb-XLM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product/Brands",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product",
+								"Brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product/Types",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product",
+								"Types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PicUrl",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/images/products/PastaSalad.png",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"images",
+								"products",
+								"PastaSalad.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Specification",
+			"item": [
+				{
+					"name": "Get All Products With Specifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id With Specifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/product/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"product",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filteration",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product?BrandId=1&TypeId=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "BrandId",
+									"value": "1"
+								},
+								{
+									"key": "TypeId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sorting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product?SearchValue=Chicken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "SearchValue",
+									"value": "Chicken"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"item": [
+				{
+					"name": "pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product?PageIndex=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "PageIndex",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pagination Result",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product?PageIndex=3&PageSize=2&BrandId=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "PageIndex",
+									"value": "3"
+								},
+								{
+									"key": "PageSize",
+									"value": "2"
+								},
+								{
+									"key": "BrandId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exceptions",
+			"item": [
+				{
+					"name": "Server Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product/20",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Endpoint Not Found",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Productsss",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Productsss"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validation Error",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Product?BrandId=hamada&TypeId=sady",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "BrandId",
+									"value": "hamada"
+								},
+								{
+									"key": "TypeId",
+									"value": "sady"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Basket",
+			"item": [
+				{
+					"name": "Create & Update Basket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MjY4NjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.aKb3wlXUMw7_758LAq9kJvw_jsrTCuJGD82OeD1Vekc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Id\": \"BasketOrder3\",\r\n  \"Items\": [\r\n    {\r\n      \"Id\": 4,\r\n      \"Name\": \"Laptop\",\r\n      \"PicutreUrl\": \"https://example.com/images/laptop.jpg\",\r\n      \"Price\": 1000.5,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 5,\r\n      \"Name\": \"Mouse\",\r\n      \"PicutreUrl\": \"https://example.com/images/mouse.jpg\",\r\n      \"Price\": 25,\r\n      \"Quantity\": 2\r\n    },\r\n    {\r\n      \"Id\": 6,\r\n      \"Name\": \"Keyboard\",\r\n      \"PicutreUrl\": \"https://example.com/images/keyboard.jpg\",\r\n      \"Price\": 75.2,\r\n      \"Quantity\": 1\r\n    }\r\n  ],\r\n  \"DeliveryMethodId\":1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/basket",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"basket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Id\": \"BasketOrder3\",\r\n  \"Items\": [\r\n    {\r\n      \"Id\": 113,\r\n      \"Name\": \"Laptop\",\r\n      \"PicutreUrl\": \"https://example.com/images/laptop.jpg\",\r\n      \"Price\": 1000.5,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 114,\r\n      \"Name\": \"Mouse\",\r\n      \"PicutreUrl\": \"https://example.com/images/mouse.jpg\",\r\n      \"Price\": 25,\r\n      \"Quantity\": 2\r\n    },\r\n    {\r\n      \"Id\": 115,\r\n      \"Name\": \"Keyboard\",\r\n      \"PicutreUrl\": \"https://example.com/images/keyboard.jpg\",\r\n      \"Price\": 75.2,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 108,\r\n      \"Name\": \"Headphones\",\r\n      \"PicutreUrl\": \"https://example.com/images/headphones.jpg\",\r\n      \"Price\": 150,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 109,\r\n      \"Name\": \"USB Flash Drive\",\r\n      \"PicutreUrl\": \"https://example.com/images/usb.jpg\",\r\n      \"Price\": 18.5,\r\n      \"Quantity\": 3\r\n    },\r\n    {\r\n      \"Id\": 110,\r\n      \"Name\": \"Webcam\",\r\n      \"PicutreUrl\": \"https://example.com/images/webcam.jpg\",\r\n      \"Price\": 89.9,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 111,\r\n      \"Name\": \"External Hard Drive\",\r\n      \"PicutreUrl\": \"https://example.com/images/harddrive.jpg\",\r\n      \"Price\": 240,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 112,\r\n      \"Name\": \"Monitor\",\r\n      \"PicutreUrl\": \"https://example.com/images/monitor.jpg\",\r\n      \"Price\": 310.75,\r\n      \"Quantity\": 1\r\n    }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/basket?Key=BasketOrder3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"basket"
+							],
+							"query": [
+								{
+									"key": "Key",
+									"value": "BasketOrder3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Id\": \"BasketOrder3\",\r\n  \"Items\": [\r\n    {\r\n      \"Id\": 113,\r\n      \"Name\": \"Laptop\",\r\n      \"PicutreUrl\": \"https://example.com/images/laptop.jpg\",\r\n      \"Price\": 1000.5,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 114,\r\n      \"Name\": \"Mouse\",\r\n      \"PicutreUrl\": \"https://example.com/images/mouse.jpg\",\r\n      \"Price\": 25,\r\n      \"Quantity\": 2\r\n    },\r\n    {\r\n      \"Id\": 115,\r\n      \"Name\": \"Keyboard\",\r\n      \"PicutreUrl\": \"https://example.com/images/keyboard.jpg\",\r\n      \"Price\": 75.2,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 108,\r\n      \"Name\": \"Headphones\",\r\n      \"PicutreUrl\": \"https://example.com/images/headphones.jpg\",\r\n      \"Price\": 150,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 109,\r\n      \"Name\": \"USB Flash Drive\",\r\n      \"PicutreUrl\": \"https://example.com/images/usb.jpg\",\r\n      \"Price\": 18.5,\r\n      \"Quantity\": 3\r\n    },\r\n    {\r\n      \"Id\": 110,\r\n      \"Name\": \"Webcam\",\r\n      \"PicutreUrl\": \"https://example.com/images/webcam.jpg\",\r\n      \"Price\": 89.9,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 111,\r\n      \"Name\": \"External Hard Drive\",\r\n      \"PicutreUrl\": \"https://example.com/images/harddrive.jpg\",\r\n      \"Price\": 240,\r\n      \"Quantity\": 1\r\n    },\r\n    {\r\n      \"Id\": 112,\r\n      \"Name\": \"Monitor\",\r\n      \"PicutreUrl\": \"https://example.com/images/monitor.jpg\",\r\n      \"Price\": 310.75,\r\n      \"Quantity\": 1\r\n    }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/basket?Key=BasketOrder3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"basket"
+							],
+							"query": [
+								{
+									"key": "Key",
+									"value": "BasketOrder3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Email\" : \"Qabbanioffi@gmail.com\",\r\n \"DisplayName\" : \"Mohamed\",\r\n \"PhoneNumber\" : \"01722095771\",\r\n \"Password\" : \"Pass@word123\",\r\n \"UserName\" :\"Qabbannii\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/Register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"Register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MzY4MjQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.7QJtkGirMEEIvJuhXVQb4eoyKbIc0-gVOyO9Vhn95CQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Email\" : \"Qabbanioffi@gmail.com\",\r\n \"Password\" : \"Pass@word123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/Login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NjAzMTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.qsRd-74HVp6iepNPXFyhJyP4dVvvxGiIp5f5suDuMiE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/CheckEmail?Email=Alaa@gmail.com",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"CheckEmail"
+							],
+							"query": [
+								{
+									"key": "Email",
+									"value": "Alaa@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NjAzMTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.qsRd-74HVp6iepNPXFyhJyP4dVvvxGiIp5f5suDuMiE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/CurrentUser",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"CurrentUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NjAzMTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.qsRd-74HVp6iepNPXFyhJyP4dVvvxGiIp5f5suDuMiE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/Address",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"Address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ0NjAzMTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.qsRd-74HVp6iepNPXFyhJyP4dVvvxGiIp5f5suDuMiE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"Street\" : \"Elmezmazy\",\r\n    \"City\" : \"Mansoura\",\r\n    \"Country\":\"Egypt\",\r\n    \"FirstName\":\"Abdullah\",\r\n    \"LastName\":\"Qabbani\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Authentication/Address",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Authentication",
+								"Address"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MjY4NjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.aKb3wlXUMw7_758LAq9kJvw_jsrTCuJGD82OeD1Vekc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BasketId\" : \"BasketOrder3\",\r\n    \"address\":{\r\n    \"Street\" : \"Elmezmazy\",\r\n    \"City\" : \"Mansoura\",\r\n    \"Country\":\"Egypt\",\r\n    \"FirstName\":\"Abdullah\",\r\n    \"LastName\":\"Qabbani\"\r\n    },\r\n    \"DeliveryMethodId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Order",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Delivery Methods",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MjY4NjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.aKb3wlXUMw7_758LAq9kJvw_jsrTCuJGD82OeD1Vekc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BasketId\" : \"BasketOrder3\",\r\n    \"address\":{\r\n    \"Street\" : \"Elmezmazy\",\r\n    \"City\" : \"Mansoura\",\r\n    \"Country\":\"Egypt\",\r\n    \"FirstName\":\"Abdullah\",\r\n    \"LastName\":\"Qabbani\"\r\n    },\r\n    \"DeliveryMethodId\": 3\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Order/DeliveryMethods",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Order",
+								"DeliveryMethods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MjY4NjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.aKb3wlXUMw7_758LAq9kJvw_jsrTCuJGD82OeD1Vekc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BasketId\" : \"BasketOrder3\",\r\n    \"address\":{\r\n    \"Street\" : \"Elmezmazy\",\r\n    \"City\" : \"Mansoura\",\r\n    \"Country\":\"Egypt\",\r\n    \"FirstName\":\"Abdullah\",\r\n    \"LastName\":\"Qabbani\"\r\n    },\r\n    \"DeliveryMethodId\": 3\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Order/AllOrders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Order",
+								"AllOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJRYWJiYW5pb2ZmaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiUWFiYmFuaWlpIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI3MjlmYTQ5Yy0zZmViLTQwZDUtYmM4MC00YWQ1ZDJkY2ExNTUiLCJleHAiOjE3NjQ1MjY4NjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwNDcvIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA0Ny9hcGkifQ.aKb3wlXUMw7_758LAq9kJvw_jsrTCuJGD82OeD1Vekc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BasketId\" : \"BasketOrder3\",\r\n    \"address\":{\r\n    \"Street\" : \"Elmezmazy\",\r\n    \"City\" : \"Mansoura\",\r\n    \"Country\":\"Egypt\",\r\n    \"FirstName\":\"Abdullah\",\r\n    \"LastName\":\"Qabbani\"\r\n    },\r\n    \"DeliveryMethodId\": 3\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7047/api/Order?OrderId=15bdaa8d-e04a-4a05-cf20-08de2c522738",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7047",
+							"path": [
+								"api",
+								"Order"
+							],
+							"query": [
+								{
+									"key": "OrderId",
+									"value": "15bdaa8d-e04a-4a05-cf20-08de2c522738"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Create Payment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
