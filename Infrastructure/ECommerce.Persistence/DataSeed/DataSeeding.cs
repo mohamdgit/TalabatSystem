@@ -78,24 +78,24 @@ namespace ECommerce.Domain.Contracts.Seeding
                 {
                     var user1 = new ApplicationUser()
                     {
-                        Email = "Qabbanioffical@gmail.com",
-                        DisplayName = "Abdullah Mohamed",
-                        PhoneNumber = "01122095771",
-                        UserName = "Qabbani"
+                        Email = "Alioffical@gmail.com",
+                        DisplayName = "Ali Mohamed",
+                        PhoneNumber = "01030592606",
+                        UserName = "Ali"
                     };
                     var user2 = new ApplicationUser()
                     {
-                        Email = "Aya@gmail.com",
-                        DisplayName = "Aya Mohamed",
-                        PhoneNumber = "01122095771",
+                        Email = "Mostafa@gmail.com",
+                        DisplayName = "Mostafa Mohamed",
+                        PhoneNumber = "01248957710",
                         UserName = "AyaQabbani"
                     };
                     var user3 = new ApplicationUser()
                     {
-                        Email = "Alaa@gmail.com",
-                        DisplayName = "Alaa Mohamed",
-                        PhoneNumber = "01122095771",
-                        UserName = "Alaa"
+                        Email = "Mohamed@gmail.com",
+                        DisplayName = "Mohamed Mohamed",
+                        PhoneNumber = "01542095771",
+                        UserName = "Mihamed"
                     };
 
                     await userManager.CreateAsync(user1, "P@ssw0rd");
