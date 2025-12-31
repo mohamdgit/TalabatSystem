@@ -78,24 +78,24 @@ namespace ECommerce.Domain.Contracts.Seeding
                 {
                     var user1 = new ApplicationUser()
                     {
-                        Email = "Alioffical@gmail.com",
-                        DisplayName = "Ali Mohamed",
-                        PhoneNumber = "01030592606",
-                        UserName = "Ali"
+                        Email = "mohamedoffical@gmail.com",
+                        DisplayName = " Mohamed Ahmed",
+                        PhoneNumber = "01022095771",
+                        UserName = "mohamed"
                     };
                     var user2 = new ApplicationUser()
                     {
-                        Email = "Mostafa@gmail.com",
-                        DisplayName = "Mostafa Mohamed",
-                        PhoneNumber = "01248957710",
-                        UserName = "AyaQabbani"
+                        Email = "Aly_Ahmed@gmail.com",
+                        DisplayName = "Aly Ahmed",
+                        PhoneNumber = "01522095771",
+                        UserName = "AlyAhmed"
                     };
                     var user3 = new ApplicationUser()
                     {
-                        Email = "Mohamed@gmail.com",
-                        DisplayName = "Mohamed Mohamed",
-                        PhoneNumber = "01542095771",
-                        UserName = "Mihamed"
+                        Email = "Alaa@gmail.com",
+                        DisplayName = "Alaa Mohamed",
+                        PhoneNumber = "01122095771",
+                        UserName = "Alaa"
                     };
 
                     await userManager.CreateAsync(user1, "P@ssw0rd");
@@ -106,6 +106,7 @@ namespace ECommerce.Domain.Contracts.Seeding
                     await userManager.AddToRoleAsync(user2, "superAdmin");
                     await userManager.AddToRoleAsync(user3, "NormalUser");
 
+                    await identityContext.SaveChangesAsync();
 
                 }
                 await identityContext.SaveChangesAsync();

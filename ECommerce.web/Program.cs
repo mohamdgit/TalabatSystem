@@ -114,7 +114,7 @@ namespace ECommerce.web
 
             var scope = app.Services.CreateScope();
             var objectSeeding = scope.ServiceProvider.GetRequiredService<IDataSeeding>();
-            objectSeeding.DataSeedAsync();
+             objectSeeding.DataSeedAsync();
             objectSeeding.IdentityDataSeedAsync();
 
             if (app.Environment.IsDevelopment())
