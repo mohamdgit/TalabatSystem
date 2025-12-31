@@ -39,11 +39,11 @@ namespace ECommerce.web
             { options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")); });
 
             builder.Services.AddDbContext<StoreIdentityDbContext>(options =>
-            { options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection")); });
+            { options.UseSqlServer(builder.Configuration.GetConnectionString("identityconnection")); });
 
             builder.Services.AddSingleton<IConnectionMultiplexer>((_) =>
             {
-                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection"));
+                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("redisdatabase"));
             });
             #endregion
 
@@ -85,11 +85,11 @@ namespace ECommerce.web
                     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                     {
                         ValidateIssuer = true,
-                        ValidIssuer = builder.Configuration.GetSection("SecurityKey")["Issuer"],
+                        ValidIssuer = builder.Configuration.GetSection("Jwt")["Issuer"],
                         ValidateAudience = true,
-                        ValidAudience = builder.Configuration.GetSection("JWTOptions")["Audience"],
+                        ValidAudience = builder.Configuration.GetSection("Jwt")["Audience"],
                         ValidateLifetime = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWTOptions")["SecurityKey"])),
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("Jwt")["SecurityKey"])),
 
                     };
 
